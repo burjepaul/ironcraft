@@ -202,6 +202,7 @@
             justify-content: space-around;
 
             .footer-column{
+                font-size: var(--step-1);
                 .social-media-svg{
                     fill: var(--color-title);
                     width: auto;
@@ -235,11 +236,26 @@
 
 @media screen and (max-width: 950px) {
     .home-container{
+        .home-hero{
+
+            .titles{
+                
+                h1{
+                    font-size: 8.5vw;
+                }
+                h2{
+                    font-size: 4.5vw;
+                }
+            }
+        }
+
         .product-information-container{
-            
+            .product-description{
+                width: 65%;
+            }
+
             .anvil-image{
                 margin-top: 5%;
-                margin-right: 5vw;
                 
                 img{
                     min-width: 600px;
@@ -247,17 +263,12 @@
             }
         }
         .small-products-description{
-            width: 40%;
+            width: 45%;
         }
-        .stair-container{
-            
-            .stair-image{
-                margin-top: 5%;
-                margin-right: 15vw;
-                
-                img{
-                    min-width: 600px;
-                }
+        
+        .stairs-container{
+            .stairs-description{
+                width: 65%;
             }
         }
 
