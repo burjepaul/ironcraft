@@ -30,7 +30,7 @@ nav{
     align-items: flex-start;
     justify-content: space-around;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: -20px;
     z-index: 1;
 }
 
@@ -44,7 +44,7 @@ nav{
 .menu{
     width: 35%;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 15%;
     right: 0;
     z-index: 3;
 }
@@ -63,7 +63,7 @@ nav{
 }
 
 .burger-bar.clicked:nth-child(2){
-    transform: scale(0.1);
+    transform: scale(0.01);
     transition: ease-out 0.5s
 }
 
@@ -83,9 +83,9 @@ nav{
     font-size: var(--step-5);
     color: var(--color-title);
     text-align: center;
-    background-color:rgb(0,0,0, 0.3);
-    text-shadow: rgba(255, 255, 255, 0.459) 2px 2px 13px;
-    opacity: 0.8;
+    background-color:rgb(0,0,0, 0.5);
+    text-shadow: rgba(0, 0, 0, 1) 2px 2px 13px;
+    opacity: 0.9;
     text-decoration: none;
 }
 
