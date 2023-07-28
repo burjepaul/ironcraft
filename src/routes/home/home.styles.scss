@@ -1,0 +1,315 @@
+.home-container{
+    background-color: var(--color-silver);  
+    
+    .home-hero{
+    background-image:url('../../assets/mainImage.png');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 70vh; /* You must set a specified height */
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: column;
+    
+    .titles{
+        margin:auto;
+        
+        h1{
+            font-size: 5.5vw;
+            margin-top: 22%;
+            color:var(--color-title);
+            text-shadow: rgba(0, 0, 0, 1) 0px 0px 12px;
+        }
+        h2{
+            font-size: 2.5vw;
+            color:var(--color-title);
+            text-shadow: rgba(0, 0, 0, 1) 0px 0px 12px;
+            margin-top:-8%;
+        }
+    }
+    }
+
+    .product-information-container{
+        max-width: 1200px;
+        margin: 1% auto;
+        padding: 0% 5%;
+        display: flex;
+        position: relative;
+        color:var(--color-title);
+
+        .product-description{
+            width: 45%;
+            z-index: 1;
+            font-weight: 900;
+            h1{
+                font-size: var(--step-4);
+            }
+            p{
+                font-size: var(--step-1);
+            }
+        }
+
+        .anvil-image{
+            position: absolute;
+            margin-top: -5%;
+            transform: rotate(-1deg);
+            right: 0;
+            margin-right: -12vw;
+     
+
+            img{
+                width: 58vw;
+            }
+        }
+    }
+    
+    .small-products{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        
+        
+        .first-half{
+            width: 100%;
+            .upper{
+                background-color: blue;
+                background-image:url('../../assets/small-items/chandelier.jpg');
+                background-position:center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover; /* Resize the background image to cover the entire container */
+                width: 100%;
+                height: 50%;
+            }
+            .under{
+                background-color: green;
+                background-image:url('../../assets/small-items/shelf.jpg');
+                background-position:top; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover; /* Resize the background image to cover the entire container */
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .second-half{
+            background-color: red;
+            background-image:url('../../assets/small-items/candle.jpg');
+            background-position:center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            width: 80%;
+            height: 100%;
+        }
+    }
+    
+    .small-products-description{
+        color:var(--color-silver);
+        font-size: var(--step-1);
+        font-weight: 900;
+        position: absolute;
+        align-content: center;
+        width: 30%;
+        right: 10%;
+        top:15%;
+        margin: 1% auto;
+        padding: 0% 5%;
+        background-color: rgb(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 12px 12px rgba(0,0,0, 0.6);
+        text-shadow: rgba(0, 0, 0, 0.459) 2px 2px 13px;
+        border-radius: 10%;
+    }
+    
+    .stairs-container{
+        max-width: 1200px;
+        margin: 1% auto;
+        padding: 0% 5%;
+        display: flex;
+        position: relative;
+        color:var(--color-title);
+        
+        .stairs-description{
+            width: 45%;
+            z-index: 1;
+            font-weight: 900;
+            h1{
+                font-size: var(--step-4);
+            }
+            p{
+                font-size: var(--step-1);
+            }
+        }
+        
+        .stair-image{
+            position: absolute;
+            transform: rotate(-1deg);
+            right: 0;
+            margin-right: -6vw;
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .gates-products{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        
+        
+        .first-half{
+            width: 100%;
+            .upper{
+                background-color: blue;
+                background-image:url('../../assets/gates/1.png');
+                background-position:center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover; /* Resize the background image to cover the entire container */
+                width: 100%;
+                height: 50%;
+            }
+            .under{
+                background-color: green;
+                background-image:url('../../assets/gates/2.jpg');
+                background-position:top; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover; /* Resize the background image to cover the entire container */
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .second-half{
+            background-color: red;
+            background-image:url('../../assets/gates/3.jpg');
+            background-position:center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+
+    .footer{
+        padding: 3% 0%;
+
+        .footer-container{
+            max-width: 1200px;
+            margin: 1% auto;
+            padding: 0% 5%;
+            display: flex;
+            justify-content: space-around;
+
+            .footer-column{
+                .social-media-svg{
+                    fill: var(--color-title);
+                    width: auto;
+                }
+                
+                .twitter:hover{
+                    cursor: pointer;
+                    background: #1DA1F2;
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+                .instagram:hover{
+                    cursor: pointer;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+                .facebook:hover{
+                    cursor: pointer;
+                    background: #3B5998;
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .home-container{
+        .product-information-container{
+            
+            .anvil-image{
+                margin-top: 5%;
+                margin-right: 5vw;
+                
+                img{
+                    min-width: 600px;
+                }
+            }
+        }
+        .small-products-description{
+            width: 40%;
+        }
+        .stair-container{
+            
+            .stair-image{
+                margin-top: 5%;
+                margin-right: 15vw;
+                
+                img{
+                    min-width: 600px;
+                }
+            }
+        }
+
+    .footer{
+        padding: 3% 0%;
+
+        .footer-container{
+            max-width: 1200px;
+            margin: 1% auto;
+            padding: 0% 5%;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .footer-column{
+                margin-bottom: 5%;
+                h2{
+                    display: inline;
+                }
+                p{
+                    display: inline;
+                    margin: 0 5%;
+                }
+                .social-media-svg{
+                    fill: var(--color-title);
+                    width: auto;
+                    display: inline;
+                    margin: 0% 5%;
+                }
+                
+                .twitter:hover{
+                    cursor: pointer;
+                    background: #1DA1F2;
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+                .instagram:hover{
+                    cursor: pointer;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+                .facebook:hover{
+                    cursor: pointer;
+                    background: #3B5998;
+                    transform: scale(1.3);
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+    }
+}

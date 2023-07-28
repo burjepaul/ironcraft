@@ -1,0 +1,20 @@
+.button-container{
+    width: fit-content;
+    margin: auto;
+    border-radius: 10%;
+    transition: 0.75s;
+
+    a{
+        text-decoration: none;
+        
+        p{
+            padding: 0.3em 1em;
+        }
+    }
+}
+
+.button-container:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.75s;
+}
