@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react"
 import { Outlet, Link } from "react-router-dom"
 
-import {ReactComponent as Logo} from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 
 import './navigation.styles.scss'
 import './burger-menu.styles.scss'
@@ -36,7 +36,7 @@ const Navigation = () => {
         <Fragment>
             <div style={{width:'100%', height:'9vh'}}>
                 <Link className="logo-container" to="/">
-                    <Logo className="logo"/>
+
                 </Link>
                 <nav>
                     <div className="burger-menu" onClick={updateMenu}>
@@ -70,7 +70,7 @@ const Navigation = () => {
           <Fragment>
             <div className="navigation">
                 <Link className="logo-container" to="/">
-                    <Logo className="logo"/>
+
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to='/gallery'>

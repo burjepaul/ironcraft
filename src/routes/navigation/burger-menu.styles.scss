@@ -16,10 +16,14 @@ nav{
 }
 
 .logo-container{
-    padding: 3%;
     position: absolute;
-    display: inline-block;
-    z-index: 1;
+    height: auto;
+    padding: 10% 4%;
+    width: 50vw;
+    background-image:url('../../assets/1.png');
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .burger-menu{

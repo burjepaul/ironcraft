@@ -12,7 +12,13 @@
     right: 0;
     
     .logo-container {
-        height: 100%;
+        height: auto;
+        width: 20vw;
+        padding: 3%;
+        background-image:url('../../assets/1.png');
+        background-position:center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
         position: relative;
         z-index: 1;
     }
