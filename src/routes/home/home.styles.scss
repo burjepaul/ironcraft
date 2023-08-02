@@ -2,31 +2,14 @@
     background-color: var(--color-silver);  
     
     .home-hero{
-    background-image:url('../../assets/mainImage.png');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 70vh; /* You must set a specified height */
-    background-position:center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    display: flex;
-    flex-direction: column;
-    
-    .titles{
-        margin:auto;
-        
-        h1{
-            font-size: 5.5vw;
-            margin-top: 22%;
-            color:var(--color-title);
-            text-shadow: rgba(0, 0, 0, 1) 0px 0px 12px;
+        background-color: black;
+        video{
+            width: 75%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
         }
-        h2{
-            font-size: 2.5vw;
-            color:var(--color-title);
-            text-shadow: rgba(0, 0, 0, 1) 0px 0px 12px;
-            margin-top:-8%;
-        }
-    }
     }
 
     .product-information-container{
@@ -237,15 +220,9 @@
 @media screen and (max-width: 950px) {
     .home-container{
         .home-hero{
-
-            .titles{
-                
-                h1{
-                    font-size: 8.5vw;
-                }
-                h2{
-                    font-size: 4.5vw;
-                }
+            video{
+                width: 140%;
+                margin-left: -20%;
             }
         }
 

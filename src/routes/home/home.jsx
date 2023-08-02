@@ -1,6 +1,7 @@
 import './home.styles.scss'
 import Anvil from '../../assets/nicovala.png'
 import Stair from '../../assets/stair.png'
+import LogoVideo from '../../assets/LogoVideo.mp4'
 import {ReactComponent as TwitterSvg} from "../../assets/logos/twitter.svg"
 import {ReactComponent as InstagramSvg} from "../../assets/logos/instagram.svg"
 import {ReactComponent as Facebook} from "../../assets/logos/facebook.svg"
@@ -24,10 +25,9 @@ const Home = () => {
         <div className='home-container'>
 
             <div className='home-hero'>
-                <div className='titles'>
-                    <h1>Welcome to IronCraft</h1>
-                    <h2>Crafting Your Vision in Metal</h2>
-                </div>
+                <video autoPlay={true} muted={true} loop={true}>
+                <source src={LogoVideo} type="video/mp4" />
+                </video>
             </div>
 
             <div className='product-information-container' ref={productInfo} style={{opacity: `${percenteageToShowproductInfo}%`}}>
