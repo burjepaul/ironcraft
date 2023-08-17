@@ -7,10 +7,9 @@ import {ReactComponent as InstagramSvg} from "../../assets/logos/instagram.svg"
 import {ReactComponent as Facebook} from "../../assets/logos/facebook.svg"
 import CustomButton from '../../components/customButton/customButton'
 import { useRef } from 'react'
-import { OpacityPercentage } from '../../config/helper'
+import { OpacityPercentage} from '../../config/helper'
 
 const Home = () => {
-
     const productInfo = useRef(null)
     const smallProduct = useRef(null)
     const stairs = useRef(null)
@@ -20,6 +19,8 @@ const Home = () => {
     const percenteageToShowsmallProduct = OpacityPercentage(smallProduct)
     const percenteageToShowstairs = OpacityPercentage(stairs)
     const percenteageToShowgates = OpacityPercentage(gates)
+
+    
 
     return (
         <div className='home-container'>

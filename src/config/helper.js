@@ -42,3 +42,32 @@ export const GetPositionOfanElementInPage = (divRef) => {
 export const OpacityPercentage = (elementRef) => {
     return (window.innerHeight*95/100 - GetPositionOfanElementInPage(elementRef).top)/(GetPositionOfanElementInPage(elementRef).bottom - GetPositionOfanElementInPage(elementRef).top)*100
 }
+
+export const DetectScroll = () => {
+    const [scrollDirection, setScrollDirection] = useState(null);
+    const [prevScrollY, setPrevScrollY] = useState(0);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+    
+            if (currentScrollY > prevScrollY) {
+              // Scrolling down
+              setScrollDirection('down');
+            } else if (currentScrollY < prevScrollY) {
+              // Scrolling up
+              setScrollDirection('up');
+            }
+        
+            setPrevScrollY(currentScrollY);
+          }
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [prevScrollY]);
+
+    return(scrollDirection)
+}

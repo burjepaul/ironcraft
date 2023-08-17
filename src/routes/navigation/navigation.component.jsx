@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react"
 import { Outlet, Link } from "react-router-dom"
-
+import { DetectScroll } from "../../config/helper"
 import './navigation.styles.scss'
 import './burger-menu.styles.scss'
 
@@ -10,6 +10,8 @@ const Navigation = () => {
     const [isMenuClicked, setIsMenuClicked] = useState(false)
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth)
     
+    const scroll = DetectScroll()
+
     const toggle_hide = () => {
         setBurgerClass("burger-bar unclicked")
         setMenuClass("menu hidden")
@@ -66,7 +68,7 @@ const Navigation = () => {
     else{
         return(
           <Fragment>
-            <div className="navigation">
+            <div className="navigation" style={scroll === 'down' ? {opacity: 0} : {opacity: 100}}>
                 <Link className="logo-container" to="/">
 
                 </Link>
