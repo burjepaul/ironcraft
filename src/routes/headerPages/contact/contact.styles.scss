@@ -6,7 +6,7 @@
     padding: 10% 5%;
 
     h1{
-        margin:0;
+        padding: 2% 0%;
         font-size: var(--step-5);
         color: var(--color-title);
         text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
@@ -72,19 +72,29 @@
 }
 }
 
-@media screen and (max-width: 480px) {
-    .form-component{
-        .form-group-name{
-    
-            input{
-                margin-bottom: 1rem;
-                background-color: var(--color-title);
-                padding: 1rem;
-                width: 90%;
+@media screen and (max-width: 680px) {
+    .contact-container{
+        h1{
+            padding: 25% 0 5%;
+        }
+
+        .form-component{
+            .form-group-name{
+                
+                input{
+                    margin-bottom: 1rem;
+                    background-color: var(--color-title);
+                    padding: 1rem;
+                    width: 90%;
+                }
+                
+                textarea{
+                    width: 90%;
+                }
             }
             
-            textarea{
-                width: 90%;
+            .submit-contact{
+                padding: 3% 5%;
             }
         }
     }
