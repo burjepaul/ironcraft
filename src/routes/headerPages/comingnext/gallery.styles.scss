@@ -11,6 +11,11 @@
     background-position: center;
     z-index: -1;
     
+    .pick-gallery-text{
+        font-size: var(--step-4);
+        margin:0;
+        padding: 6% 0 11%;
+    }
     .gallery-hero{
         display: flex;
         align-items: center;
@@ -107,6 +112,9 @@
             .iamges-container:hover{
                 margin-right: 10%;
                 .images:hover{
+                    scale: 1;
+                    cursor: pointer;
+                    border-radius: 0%;
             }
         }
     

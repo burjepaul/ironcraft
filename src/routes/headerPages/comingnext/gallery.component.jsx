@@ -29,7 +29,7 @@ const Gallery = () => {
                         </div>
                     </div>
                 </div>
-                {activeGallery ? <CarouselImages galleryToShow={activeGallery}/> : <h2 style={{paddingBottom:'17%',paddingTop:'5%',margin:0, fontSize:'var(--step-4'}}>Pick a gallery from above</h2>}
+                {activeGallery ? <CarouselImages galleryToShow={activeGallery}/> : <h2 className='pick-gallery-text'>Pick a gallery from above</h2>}
             </div>
         </div>
     )
