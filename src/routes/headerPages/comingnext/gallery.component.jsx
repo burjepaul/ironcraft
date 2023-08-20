@@ -5,11 +5,13 @@ import gateImage2 from '../../../assets/gallery-page/e.jpg'
 import stair from '../../../assets/gallery-page/e1.jpg'
 import railing from '../../../assets/gallery-page/a.jpg'
 import CarouselImages from '../../../components/carousel/carousel.component'
+import Footer from '../../footer/footer.component'
 
 const Gallery = () => {
     const [activeGallery, setActiveGallery] = useState(null)
 
     return(
+        <>
         <div className='container'>
             <div className='gallery-container'>
                 <div className='gallery-hero'>
@@ -29,9 +31,12 @@ const Gallery = () => {
                         </div>
                     </div>
                 </div>
-                {activeGallery ? <CarouselImages galleryToShow={activeGallery}/> : <h2 className='pick-gallery-text'>Pick a gallery from above</h2>}
+                {activeGallery ? <CarouselImages currentPage={'gallery-page'} galleryToShow={activeGallery} numberOfImagesToShow={3} title={activeGallery}/> : <h2 className='pick-gallery-text'>Pick a gallery from above</h2>}
             </div>
         </div>
+        <Footer/>
+        </>
+        
     )
 }
 

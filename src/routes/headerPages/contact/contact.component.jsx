@@ -1,6 +1,7 @@
 import { useReducer, useState } from 'react'
 // import emailjs from "emailjs-com"
 import './contact.styles.scss'
+import Footer from '../../footer/footer.component'
 
 const Contact = () => {
     const [validData, setValidData] = useState(true)
@@ -182,6 +183,7 @@ const Contact = () => {
     }
 
     return(
+        <>
         <div className='contact-container'>
             <h1>Contact</h1>
             <form className='form-component' onSubmit={(e) => {
@@ -204,14 +206,14 @@ const Contact = () => {
                     <textarea placeholder='Your message (min 50 characters) *' name="message" value={state.message} style={{color:state.messagecolor}} onChange={handleMessageChange}/>
                 </div>
                 {
-                (validData) ?
+                    (validData) ?
                     '' 
                     :
                     <p style={{color:"red"}}>Something is wrong, check again!</p>
                 }
 
                 {
-                (messageSent) ? 
+                    (messageSent) ? 
                     <p style={{color:"red"}}>Message sent!</p> 
                     :
                     ''
@@ -219,6 +221,8 @@ const Contact = () => {
                 <button className='submit-contact'>Send</button>
             </form>
         </div>
+        <Footer/>
+        </>
     )
 }
 

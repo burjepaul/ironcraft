@@ -2,12 +2,10 @@ import './home.styles.scss'
 import Anvil from '../../assets/nicovala.png'
 import Stair from '../../assets/stair.png'
 import LogoVideo from '../../assets/LogoVideo.mp4'
-import {ReactComponent as TwitterSvg} from "../../assets/logos/twitter.svg"
-import {ReactComponent as InstagramSvg} from "../../assets/logos/instagram.svg"
-import {ReactComponent as Facebook} from "../../assets/logos/facebook.svg"
 import CustomButton from '../../components/customButton/customButton'
 import { useRef } from 'react'
 import { OpacityPercentage} from '../../config/helper'
+import Footer from '../footer/footer.component'
 
 const Home = () => {
     const productInfo = useRef(null)
@@ -73,44 +71,7 @@ const Home = () => {
                 </div>
                 <p className='small-products-description'>&nbsp;&nbsp;&nbsp;Gates that artfully combine iron and wood result in a captivating and functional entryway that leaves a lasting impression. The sturdy iron framework forms the backbone of the gate, offering robust support and intricate detailing.<br/>&nbsp;&nbsp;&nbsp;Complementing the iron structure, carefully chosen wood accents infuse the gate with a touch of natural elegance. The wooden elements, such as panels or inserts, soften the overall look and provide a warm, inviting texture that perfectly harmonizes with the surrounding landscape or architectural style. <CustomButton text={'See Gallery'} color={'var(--color-silver)'} textColor={'var(--color-title)'} linkTo={'gallery'}/></p>
             </div>
-
-            <div className='footer'>
-                <div className='footer-container'>
-                    <div className='footer-column'>
-                        <h2>IronCraft.com</h2>
-                        <p>About us</p>
-                        <p>FAQ</p>
-                        <p>Suppliers</p>
-                    </div>
-                    <div className='footer-column'>
-                        <h2>Follow us</h2>
-                        <a href='https://www.instagram.com/ironcraft.me/' target='_blanck'>
-                            <div className="social-media-svg">
-                                <InstagramSvg className="instagram"/>
-                            </div>
-                        </a>
-
-                        <a href='https://twitter.com/ironcraft_me' target='_blanck'>
-                            <div className="social-media-svg">
-                                <TwitterSvg className="twitter"/>
-                            </div>
-                        </a>    
-
-                        <a href='https://www.facebook.com/pages/IronCraft.ro/106323347601495' target='_blanck'>
-                            <div className="social-media-svg">
-                                <Facebook className="facebook"/>
-                            </div>
-                        </a>
-                        
-                    </div>
-                    <div className='footer-column'>
-                        <h2>Contact</h2>
-                        <p>On mobile: +40 770 171 369</p>
-                        <p>On email: ironcraft@email.com</p>
-                        <p>Via contact page: <a href='contact'>Contact</a></p>
-                    </div>
-                </div>
-            </div>
+            <Footer/>
         </div>
     )
 }

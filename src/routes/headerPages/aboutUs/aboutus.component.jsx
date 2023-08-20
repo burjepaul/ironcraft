@@ -1,7 +1,9 @@
+import Footer from '../../footer/footer.component'
 import './aboutus.styles.scss'
 
 const Aboutus = () => {
     return (
+        <>
         <div className='aboutus-container'>
             <div className='about-us-hero'>
                 <h1>About Us</h1>
@@ -15,6 +17,8 @@ const Aboutus = () => {
                 <p>Today, we stand as a testament to creativity, dedication, and the power of evolution. Our portfolio showcases a diverse range of iron and wood creations, from functional furniture to ornamental decor, each reflecting the intricate balance between industrial durability and the organic beauty of wood. With every piece we produce, we continue to celebrate the fusion of these two materials and the growth of our ironcraft startup into a source of inspiration for those who appreciate the timeless allure of craftsmanship.</p>
             </div>
        </div>
+       <Footer/>
+        </>
     )
 }
 
