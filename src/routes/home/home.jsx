@@ -48,7 +48,7 @@ const Home = () => {
 
                 <div className='second-half'>
                 </div>
-                <p className='small-products-description'>&nbsp;&nbsp;&nbsp;Manually forged iron chandeliers, shelves, wine supports, and other small interior objects represent a captivating blend of craftsmanship and artistry.  <br/>&nbsp;&nbsp;&nbsp;Each item is scrupulous handcrafted, starting with raw iron materials that are heated in a forge until they reach a malleable state. The blacksmith then skillfully hammers, bends, twists, and shapes the iron into intricate designs, incorporating unique patterns and details. This manual process ensures that every piece is distinct and showcases the artisan's personal touch. <CustomButton text={'See Gallery'} color={'var(--color-silver)'} textColor={'var(--color-title)'} linkTo={'gallery'}/></p>
+                <p className='small-products-description'>&nbsp;&nbsp;&nbsp;Manually forged iron chandeliers, shelves, wine supports, and other small interior objects represent a captivating blend of craftsmanship and artistry.  <br/>&nbsp;&nbsp;&nbsp;Each item is scrupulous handcrafted, starting with raw iron materials that are heated in a forge until they reach a malleable state. The blacksmith then skillfully hammers, bends, twists, and shapes the iron into intricate designs, incorporating unique patterns and details. This manual process ensures that every piece is distinct and showcases the artisan's personal touch. <CustomButton text={'See Products'} color={'var(--color-silver)'} textColor={'var(--color-title)'} linkTo={'products'}/></p>
             </div>
 
             <div className='stairs-container' ref={stairs} style={{opacity: `${percenteageToShowstairs}%`}}>

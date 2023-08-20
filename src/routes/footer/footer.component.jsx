@@ -10,7 +10,9 @@ const Footer = () => {
             <div className='footer-container'>
                 <div className='footer-column'>
                     <h2>IronCraft.com</h2>
-                    <p>About us</p>
+                    <a href='/aboutus'>
+                        <p>About us</p>
+                    </a>
                     <p>FAQ</p>
                     <p>Suppliers</p>
                 </div>

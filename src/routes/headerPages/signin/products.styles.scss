@@ -53,12 +53,12 @@
 @media screen and (max-width: 1000px) {
     .products-container{
         display: block;
-        padding: 1% 0;
+        padding: 20% 0 8%;
 
         .products-text{
             .product-item:hover{
                 scale:1;
-                transition: 0s ease-in-out;
+                transition: 0.7s ease-in-out;
                 text-shadow:none;
             }
         }
