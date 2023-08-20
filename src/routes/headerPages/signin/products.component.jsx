@@ -1,9 +1,9 @@
 import './products.styles.scss'
 
 import {ReactComponent as HammerSvg} from "../../../assets/hammer-svg.svg"
-import CarouselImages from '../../../components/carousel/carousel.component'
 import { useState } from 'react'
 import Footer from '../../footer/footer.component'
+import CarouselImagesProducts from '../../../components/carouselforProducts/carousel.component'
 
 const Products = () => {
     const [productToShow, setProductToShow] = useState(null)
@@ -23,11 +23,11 @@ const Products = () => {
                 <p className='product-item' onClick={() => setProductToShow("product-8")} style={productToShow === "product-8" ? {textShadow:"0px 0px 22px var(--color-antiqueGold)", scale:"1.3"}: {}}><HammerSvg className='hammer-svg'/>furniture for the inside or the outside, only wrought iron and massive wood, handmade</p>
             </div>
             <div className='products-area'>
-                {productToShow ? <CarouselImages currentPage={'product-page'} galleryToShow={productToShow} numberOfImagesToShow={1} className="product-carousel"/> : <></>}
-            </div>
+                {productToShow ? <CarouselImagesProducts currentPage={'product-page'} galleryToShow={productToShow} numberOfImagesToShow={1} className="product-carousel"/> : <></>}
             {
                 productToShow ? <></> : <h1 className='pick-product-text'>Pick a product from above</h1>
             }
+            </div>
         </div>
         <Footer/>
         </>

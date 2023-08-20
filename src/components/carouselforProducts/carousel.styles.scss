@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 100vh;
 
     
     .carousel-button {
@@ -31,7 +31,6 @@
     overflow: hidden;
     width: 100%;
     max-width: 1500px;
-    height: 60%;
     position: relative;
     .carousel-slide {
         width: 100%;
@@ -56,17 +55,22 @@
 
 @media screen and (max-width: 700px) {
     .carousel-title{
-        margin-top: -1%;
-        margin-bottom: -15%;
+        margin-top: 1%;
+        margin-bottom: 5%;
     }
     .carousel-container{
         height: 100vh;
+        margin-top: -30%;
         .carousel{
             flex-direction: column;
             align-items: center;
             .carousel-slide{
-                width: 70%;
+                width: 100%;
             }
+        }
+        .carousel-button:hover{
+            scale:1;
+            transition: 1s ease-in-out;
         }
         .carousel-button:hover{
             scale: 1;
