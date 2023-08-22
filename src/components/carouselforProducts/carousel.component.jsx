@@ -37,11 +37,18 @@ const CarouselImagesProducts = ({currentPage, galleryToShow, numberOfImagesToSho
               <LeftArrow/>
             </button>
               {imagesToShow.map((image, index) => (
-                <div
-                key={index}
-                className={`carousel-slide`}
-                style={{ backgroundImage: 'url(' + require(`../../assets/${currentPage}/${galleryToShow}/${image}.jpg`) + ')'}}
-                ></div>
+                <>
+                  <div
+                  key={index}
+                  className={`carousel-slide`}
+                  style={{ backgroundImage: 'url(' + require(`../../assets/${currentPage}/${galleryToShow}/${image}.jpg`) + ')'}}
+                  ></div>
+                  <div
+                  key={index}
+                  className={`carousel-slide`}
+                  style={{ backgroundImage: 'url(' + require(`../../assets/${currentPage}/${galleryToShow}/${image+1 < images.length ? image+1:1}.jpg`) + ')', display:"none"}}
+                  ></div>
+                </>
                 ))}
             <button className="carousel-button" onClick={nextImage}>
               <RightArrow/>
