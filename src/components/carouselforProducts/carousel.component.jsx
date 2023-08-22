@@ -46,7 +46,7 @@ const CarouselImagesProducts = ({currentPage, galleryToShow, numberOfImagesToSho
                   <div
                   key={index}
                   className={`carousel-slide`}
-                  style={{ backgroundImage: 'url(' + require(`../../assets/${currentPage}/${galleryToShow}/${image+1 < images.length ? image+1:1}.jpg`) + ')', display:"none"}}
+                  style={{ backgroundImage: 'url(' + require(`../../assets/${currentPage}/${galleryToShow}/${image+1 < images.length ? image+1:1}.jpg`) + ')', position:"absolute", zIndex:-1}}
                   ></div>
                 </>
                 ))}
